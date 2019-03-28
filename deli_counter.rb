@@ -19,3 +19,12 @@ def take_a_number(array, name)
   number += 1
   puts "Welcome, #{name}. You are number #{number} in line."
 end
+
+def now_serving(array)
+  current_person = array.first
+  puts "now serving #{current_person}."
+  array.shift
+  if array == 0
+    puts "There is nobody waiting to be served!"
+  end
+end
