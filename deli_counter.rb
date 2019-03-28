@@ -12,3 +12,10 @@ def line(array)
     puts "The line is currently:#{line_list}"
   end
 end
+
+def take_a_number(array, name)
+  array.push(name)
+  number = array.index(name)
+  number += 1
+  puts "Welcome, #{name}. You are number #{number} in line."
+end
